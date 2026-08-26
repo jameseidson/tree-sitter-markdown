@@ -31,11 +31,11 @@ parser = ["dep:tree-sitter"]
 path = "bindings/rust/lib.rs"
 
 [dependencies]
-tree-sitter-language = "0.1"
-tree-sitter = { version = "0.26", optional = true }
+tree-sitter-language = { git = "https://github.com/tree-sitter/tree-sitter", rev = "dff1fd868c750dbbae179fcd5c43ce987e4e0528" }
+tree-sitter = { git = "https://github.com/tree-sitter/tree-sitter", rev = "dff1fd868c750dbbae179fcd5c43ce987e4e0528", optional = true }
 
 [dev-dependencies]
-tree-sitter = "0.26.3"
+tree-sitter = { git = "https://github.com/tree-sitter/tree-sitter", rev = "dff1fd868c750dbbae179fcd5c43ce987e4e0528" }
 
 [build-dependencies]
 cc = "1.2"
